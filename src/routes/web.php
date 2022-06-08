@@ -36,4 +36,4 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('','HelloController@index');
+Route::get('{id?}/{pass?}','HelloController@index');
