@@ -11,15 +11,14 @@
 |
 */
 
-// use Illuminate\Support\Facades\Route;
 
 // Route::get('/{msg}', function ($msg) {
-//     $html = <<<EOF
-//     <html>
-//     <head>
-//     <title>Hello</title>
-//     <style>
-//         body {font-size:16pt; color:#999;}
+    //     $html = <<<EOF
+    //     <html>
+    //     <head>
+    //     <title>Hello</title>
+    //     <style>
+    //         body {font-size:16pt; color:#999;}
 //         h1 {font-size:100pt; text-align:right; color:#eee;
 //         margin:-40px 0px -50px 0px;}
 //     </style>
@@ -36,4 +35,4 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('{id?}/{pass?}','HelloController');
+Route::get('','HelloController@index');

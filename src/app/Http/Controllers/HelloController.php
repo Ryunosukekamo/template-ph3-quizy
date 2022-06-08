@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class HelloController extends Controller
 {
-    public function __invoke($id='firstName',$pass='lastName')
+    public function index(Request $request,Response $response)
     {
         $html = <<<EOF
         <html>
@@ -19,16 +20,15 @@ class HelloController extends Controller
         </style>
         </head>
         <body>
-            <h1>Index</h1>
-            <p>これは、Helloコントローラーのindexアクションです。</p>
-            <ul>
-                <li>ID:{$id}</li>
-                <li>PASS:{$pass}</li>
-            </ul>
+        <h1>Hello</h1>
+        <h3>Request</h3>
+        <pre>{$request}</pre>
+        <h3>Response</h3>
+        <pre>{$response}</pre>
         </body>
         </html>
         EOF;
-
-        return $html;
+        $response->setContent($html);
+        return $response;
     }
 }
