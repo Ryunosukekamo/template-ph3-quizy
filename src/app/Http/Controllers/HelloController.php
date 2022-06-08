@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class HelloController extends Controller
 {
     public function index(){
-        return <<<EOF
+        $html = <<<EOF
         <html>
         <head>
         <title>Hello</title>
@@ -22,6 +22,8 @@ class HelloController extends Controller
         </body>
         </html>
         EOF;
+
+        return $html;
     }
    
 }
