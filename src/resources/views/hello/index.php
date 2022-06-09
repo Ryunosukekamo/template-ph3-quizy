@@ -8,6 +8,6 @@
 </head>
 <body>
     <h1>index</h1>
-    <h1>This is sample page with php-template</h1>
+    <p>This is sample page with php-template</p>
 </body>
 </html>

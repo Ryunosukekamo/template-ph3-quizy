@@ -35,4 +35,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('','HelloController@index');
+Route::get('',function(){
+   return view('hello.index'); 
+});
