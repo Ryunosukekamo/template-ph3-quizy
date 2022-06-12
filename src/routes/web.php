@@ -14,4 +14,3 @@
 use App\Http\Controllers\ToDisplayController;
 
 Route::get('/quizy/{id?}','ToDisplayController@index');
-// Route::get('/quizy/2','ToDisplayController@Hiroshima');
