@@ -6,12 +6,9 @@ use Illuminate\Http\Request;
 
 class ToDisplayController extends Controller
 {
-    public function Tokyo(){
-        return view('Todisplay.index');
+    public function index($id)
+    {
+        $data = ['id' => $id];
+        return view('Todisplay.index', $data);
     }
-
-    // public function Hiroshima(){
-    //     return view('Todisplay.index');
-    // }
-
 }
