@@ -17,12 +17,11 @@
         <img src="https://d1khcm40x1j0f.cloudfront.net/quiz/34d20397a2a506fe2c1ee636dc011a07.png" alt="たかなわ">
 
         <ul>
-            <li id="button1" class="button_style1">{{ $array[0] }}</li>
-            <li id="button2" class="button_style2">{{ $array[1] }}</li>
-            <li id="button3" class="button_style3">{{ $array[2] }}</li>
+            <li>{{ $array[0] }}</li>
+            <li>{{ $array[1] }}</li>
+            <li>{{ $array[2] }}</li>
         </ul>
     </div>
     @endforeach
-     
 
 </body>

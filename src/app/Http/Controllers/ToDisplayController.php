@@ -8,7 +8,7 @@ class ToDisplayController extends Controller
 {
     public function index($id)
     {
-        // $data = ['id' => $id];
+        $data = ['id' => $id];
         $arrays = [
             1=>[
                 1=>['たかなわ','こうわ','たかわ'],
