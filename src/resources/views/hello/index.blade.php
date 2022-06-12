@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Blade/index</h1>
-    @if($msg !='')
+    @if ($msg !='')
     <p>こんにちは、{{$msg}}さん。</p>
     @else
     <p>何か書いて下さい。</p>
