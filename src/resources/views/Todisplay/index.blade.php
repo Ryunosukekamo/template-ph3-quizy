@@ -11,15 +11,15 @@
 
 <body>
     <!-- 中央寄せ -->
-    @foreach($arrays[$id] as $array)
+    @foreach($arraysForChoices[$id] as $choice)
     <div class="parent">
         <h2 class="name"> 1.この地名はなんて読む?</h2>
-        <img src="https://d1khcm40x1j0f.cloudfront.net/quiz/34d20397a2a506fe2c1ee636dc011a07.png" alt="たかなわ">
+        <img src="{{$choice[0]}}" alt="たかなわ">
 
         <ul>
-            <li>{{ $array[0] }}</li>
-            <li>{{ $array[1] }}</li>
-            <li>{{ $array[2] }}</li>
+            <li>{{ $choice[1] }}</li>
+            <li>{{ $choice[2] }}</li>
+            <li>{{ $choice[3] }}</li>
         </ul>
     </div>
     @endforeach
