@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\ToDisplayController;
+
+Route::get('/quizy/1','ToDisplayController@Tokyo');
+Route::get('/quizy/2','ToDisplayController@Hiroshima');
