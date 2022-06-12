@@ -11,7 +11,7 @@
 
 <body>
     <!-- 中央寄せ -->
-    @if ($id = 1)
+    @if ($id == 1)
     <div class="parent">
         <h2 class="name"> 1.この地名はなんて読む?</h2>
         <img src="https://d1khcm40x1j0f.cloudfront.net/quiz/34d20397a2a506fe2c1ee636dc011a07.png" alt="たかなわ">
@@ -39,7 +39,7 @@
         <li>おかとまち</li>
         <li>こうじまち</li>
     </ul>
-    @elseif ($id = 2)
+    @elseif ($id == 2)
     <div class="parent">
         <h2 class="name"> 1.この地名はなんて読む?</h2>
         <img src="https://d1khcm40x1j0f.cloudfront.net/quiz/d876208414d51791af9700a0389b988b.png" alt="むかいなだ">
