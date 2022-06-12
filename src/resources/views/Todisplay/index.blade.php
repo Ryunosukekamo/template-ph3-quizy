@@ -20,7 +20,6 @@
             <li id="button1" class="button_style1">たかなわ</li>
             <li id="button2" class="button_style2">こうわ</li>
             <li id="button3" class="buttton_style3">たかわ</li>
-            {{$id}}
         </ul>
     </div>
 
@@ -49,8 +48,6 @@
             <li id="button2" class="button_style2">むかいなだ</li>
             <li id="button3" class="buttton_style3">むきひら</li>
         </ul>
-        {{$id}}
-
     </div>
 
     <h2 class="name"> 2.この地名はなんて読む?</h2>
