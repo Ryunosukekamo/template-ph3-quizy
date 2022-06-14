@@ -8,8 +8,7 @@ class ToDisplayController extends Controller
 {
     public function index($id)
     {
-        $data = ['id' => $id];
-        
+      
         $arraysForChoices = [
             1=>[
                 1=>['https://d1khcm40x1j0f.cloudfront.net/quiz/34d20397a2a506fe2c1ee636dc011a07.png','たかなわ','こうわ','たかわ'],
