@@ -1,13 +1,11 @@
 <body>
     <h1>Blade/index</h1>
     <p>&#064;forディレクティブの例</p>
+    <p>＊データ一覧</p>
     @foreach ($data as $item)
-    @if ($loop->first)
-    <p>＊データ一覧</p><ul>
-    @endif
+    <ul>
     <li>No,{{$loop->iteration}}.{{$item}}</li>
-    @if ($loop->last)
-    </ul><p>ーーここまで</p>
-    @endif
+    </ul>
     @endforeach    
+    <p>ーーここまで</p>
 </body>
