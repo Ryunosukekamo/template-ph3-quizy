@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\ToDisplayController;
+
+Route::get('/quizy/{id?}','ToDisplayController@index');
