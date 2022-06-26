@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class ImgsForTokyo extends Migration
+class Choices extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class ImgsForTokyo extends Migration
      */
     public function up()
     {
-        Schema::create('ImgsForTokyo',function(Blueprint $table){
+        Schema::create('choices',function(Blueprint $table){
             $table->increments('id');
-            $table->string('img');
+            $table->string('choice');
         });
     }
 
@@ -26,6 +26,6 @@ class ImgsForTokyo extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ImgsForTokyo');
+        Schema::dropIfExists('choices');
     }
 }
