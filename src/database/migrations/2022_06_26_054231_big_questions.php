@@ -26,6 +26,6 @@ class BigQuestions extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('bigQuestions');
     }
 }
