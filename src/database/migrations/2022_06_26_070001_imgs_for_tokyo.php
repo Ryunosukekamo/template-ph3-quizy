@@ -14,7 +14,8 @@ class ImgsForTokyo extends Migration
     public function up()
     {
         Schema::create('ImgsForTokyo',function(Blueprint $table){
-            $table->increments('id');
+            $table->integer('bigQuestionId');
+            $table->integer('questionId');
             $table->string('img');
         });
     }

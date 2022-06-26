@@ -11,16 +11,26 @@ class choicesTableSeeder extends Seeder
      */
     public function run()
     {
-        $param=[
-            'choice'=>'たかなわ',
-        ];
-        DB::table('choices')->insert($param);
-        $param=[
-            'choice'=>'こうわ',
-        ];
-        DB::table('choices')->insert($param);
-        $param=[
-            'choice'=>'たかわ',
+        $param = [
+            ['bigQuestionId' => 1, 'questionId' => 1, 'choiceName' => 'こうわ'],
+            ['bigQuestionId' => 1, 'questionId' => 1, 'choiceName' => 'たかわ'],
+            ['bigQuestionId' => 1, 'questionId' => 1, 'choiceName' => 'たかなわ'],
+            ['bigQuestionId' => 1, 'questionId' => 2, 'choiceName' => 'かめど'],
+            ['bigQuestionId' => 1, 'questionId' => 2, 'choiceName' => 'かめと'],
+            ['bigQuestionId' => 1, 'questionId' => 2, 'choiceName' => 'かめいど'],
+            ['bigQuestionId' => 1, 'questionId' => 3, 'choiceName' => 'おかとまち'],
+            ['bigQuestionId' => 1, 'questionId' => 3, 'choiceName' => 'かゆまち'],
+            ['bigQuestionId' => 1, 'questionId' => 3, 'choiceName' => 'こうじまち'],
+            ['bigQuestionId' => 2, 'questionId' => 1, 'choiceName' => 'むきひら'],
+            ['bigQuestionId' => 2, 'questionId' => 1, 'choiceName' => 'むこうひら'],
+            ['bigQuestionId' => 2, 'questionId' => 1, 'choiceName' => 'むかいなだ'],
+            ['bigQuestionId' => 2, 'questionId' => 2, 'choiceName' => 'みつぎ'],
+            ['bigQuestionId' => 2, 'questionId' => 2, 'choiceName' => 'みよし'],
+            ['bigQuestionId' => 2, 'questionId' => 2, 'choiceName' => 'おしらべ'],
+            ['bigQuestionId' => 2, 'questionId' => 3, 'choiceName' => 'きやま'],
+            ['bigQuestionId' => 2, 'questionId' => 3, 'choiceName' => 'かなやま'],
+            ['bigQuestionId' => 2, 'questionId' => 3, 'choiceName' => 'ぎんざん'],
+
         ];
         DB::table('choices')->insert($param);
     }

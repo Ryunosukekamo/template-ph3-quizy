@@ -12,12 +12,9 @@ class bigQuestionsTableSeeder extends Seeder
     public function run()
     {
         $param = [
-            'title'=>'東京の難読地名クイズ',
-        ];
-        DB::table('bigQuestions')->insert($param);
 
-        $param = [
-            'title'=>'広島の難読地名クイズ',
+            ['bigQuestionTitle'=>'東京の難読地名クイズ'],
+            ['bigQuestionTitle'=>'広島の難読地名クイズ'],
         ];
         DB::table('bigQuestions')->insert($param);
     }

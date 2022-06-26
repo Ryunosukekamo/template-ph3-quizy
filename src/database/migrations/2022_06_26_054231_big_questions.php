@@ -14,8 +14,8 @@ class BigQuestions extends Migration
     public function up()
     {
         Schema::create('bigQuestions',function(Blueprint $table){
-            $table->increments('id');
-            $table->string('title');
+            $table->increments('bigQuestionId');
+            $table->string('bigQuestionTitle');
         });
     }
 

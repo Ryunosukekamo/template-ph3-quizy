@@ -14,8 +14,9 @@ class Choices extends Migration
     public function up()
     {
         Schema::create('choices',function(Blueprint $table){
-            $table->increments('id');
-            $table->string('choice');
+            $table->integer('bigQuestionId');
+            $table->integer('questionId');
+            $table->string('choiceName');
         });
     }
 
