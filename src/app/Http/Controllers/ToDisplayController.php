@@ -9,17 +9,11 @@ class ToDisplayController extends Controller
 {
     public function index($id)
     {
-        $title = DB::select("select * from bigQuestions where bigQuestionid = $id");
-        $imgs = DB::select("select * from ImgsForTokyo where bigQuestionId = $id");
-        $arrayForChoices=[];
-
-        for($i=1; $i<=count($imgs); $i++){
-            $choice = DB::select("select * from choices where bigQuestionId = $id and questionId = $i");
-            array_push($arrayForChoices,$choice);
-        }
-        
-        // dd($arrayForChoices);
-
-        return view('Todisplay.index', compact('id', 'title','imgs','arrayForChoices'));
+        $idForBigQuestionTitle = DB::table('BigQuestions')->where('id', $id)->first();
+        $allElemForSmallQuestions = DB::table('smallQuestions')->get();
+        $choices = DB::table('Choices')->get();
+        $smallQuestionId = DB::table('Choices')->get('small_question_id');
+        dd($smallQuestionId);
+        return view('Todisplay.index', compact('idForBigQuestionTitle','allElemForSmallQuestions','choices'));
     }
 }

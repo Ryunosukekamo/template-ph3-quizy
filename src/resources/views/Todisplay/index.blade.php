@@ -12,17 +12,15 @@
 <body>
     <!-- 中央寄せ -->
     <main>
-        {{$title[0]->bigQuestionTitle}}
-        @foreach($imgs as $img)
+        <?php $idForBigQuestionTitle->title; ?>
+        @foreach($allElemForSmallQuestions as $allElemForSmallQuestion)
         <div class="question">
-            <h2 class="question_name"> この地名はなんて読む?</h2>
-            <img src="{{$img->img}}" alt="">
+            <h2 class="question_name">{{$allElemForSmallQuestion->title}}</h2>
+            <img src="{{$allElemForSmallQuestion->picture}}" alt="">
             <ul>
-                @foreach($arrayForChoices as $choices)
-                @foreach($choices as $choice)
-                <li class="">{{$choice->choiceName}}</li>
-                @endforeach
-                @endforeach
+                @for($i=0; $i<4; $i++)
+                    <li class="">{{$choices[$i]->choice}}</li>
+                @endfor
             </ul>
         </div>
         @endforeach
