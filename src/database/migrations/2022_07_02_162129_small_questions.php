@@ -4,16 +4,12 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Questions extends Migration
+class smallQuestions extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
-        Schema::create('Questions', function (Blueprint $table) {
+        Schema::create('smallQuestions', function (Blueprint $table) {
             $table->bigincrements('id');
             $table->string('title');
             $table->string('picture');
@@ -22,13 +18,8 @@ class Questions extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
-        Schema::dropIfExists('Questions');
+        Schema::dropIfExists('smallQuestions');
     }
 }
