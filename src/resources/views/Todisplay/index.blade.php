@@ -19,7 +19,7 @@
             <img src="{{$allElemForSmallQuestion->picture}}" alt="">
             <ul>
                 @for($i=0; $i<4; $i++)
-                    <li class="">{{$choices[$i]->choice}}</li>
+                    <li class="">{{$smallQuestionIds[$i]->choice}}</li>
                 @endfor
             </ul>
         </div>
