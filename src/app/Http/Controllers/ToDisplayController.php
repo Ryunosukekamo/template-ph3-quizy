@@ -17,6 +17,6 @@ class ToDisplayController extends Controller
             $smallQuestionIds = DB::table('Choices')->where('small_question_id',$i)->get();
         }
         // dd($smallQuestionIds);
-        return view('Todisplay.index', compact('idForBigQuestionTitle','allElemForSmallQuestions','smallQuestionIds'));
+        return view('Todisplay.index', compact('idForBigQuestionTitle','allElemForSmallQuestions'));
     }
 }

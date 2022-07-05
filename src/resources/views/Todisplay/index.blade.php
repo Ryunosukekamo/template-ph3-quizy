@@ -18,9 +18,6 @@
             <h2 class="question_name">{{$allElemForSmallQuestion->title}}</h2>
             <img src="{{$allElemForSmallQuestion->picture}}" alt="">
             <ul>
-                @for($i=0; $i<4; $i++)
-                    <li class="">{{$smallQuestionIds[$i]->choice}}</li>
-                @endfor
             </ul>
         </div>
         @endforeach
