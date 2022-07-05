@@ -12,15 +12,12 @@
 <body>
     <!-- 中央寄せ -->
     <main>
-        @foreach($arraysForChoices[$id] as $choice)
+        <?php $idForBigQuestionTitle->title; ?>
+        @foreach($allElemForSmallQuestions as $allElemForSmallQuestion)
         <div class="question">
-            <h2 class="question_name"> この地名はなんて読む?</h2>
-            <img src="{{$choice[0]}}" alt="たかなわ">
-    
+            <h2 class="question_name">{{$allElemForSmallQuestion->title}}</h2>
+            <img src="{{$allElemForSmallQuestion->picture}}" alt="">
             <ul>
-                <li class="choice">{{ $choice[1] }}</li>
-                <li class="choice">{{ $choice[2] }}</li>
-                <li class="choice">{{ $choice[3] }}</li>
             </ul>
         </div>
         @endforeach
